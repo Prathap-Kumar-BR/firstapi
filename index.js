@@ -6,7 +6,7 @@ const firstapiRoute = require("./server/routes/firstapiRoutes");
 const app = express();
 app.use(express.json());
 
-app.use("/api", firstapiRoute);
+app.use("/", firstapiRoute);
 
 PORT = process.env.PORT || 5000;
 
